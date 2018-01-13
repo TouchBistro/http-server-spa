@@ -76,7 +76,7 @@
     const resource = path.join(cwd, root, uri);
     // A route was requested
     if(isRouteRequest(uri)) {
-      sendIndex(res, uri === '/' ? 200 : 301);
+      sendIndex(res, 200);
       console.log(`[OK] GET ${uri}`);
       return;
     }
